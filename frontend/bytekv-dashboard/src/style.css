@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background: #1e1e1e;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main layout */
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background: #141414;
+    border-right: 1px solid #333;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+/* Search box */
+.search-box input {
+    width: 100%;
+    padding: 8px;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Key list */
+.key-list {
+    margin-top: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.key-item {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.key-item:hover {
+    background: #222;
+}
+
+.key-item.active {
+    background: #333;
+}
+
+/* Main panel */
+.main-panel {
+    flex-grow: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+/* Textarea */
+.editor {
+    width: 100%;
+    height: 180px;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+
+.btn-save {
+    background: #2ecc71;
+}
+
+.btn-save:hover {
+    background: #27ae60;
+}
+
+.btn-delete {
+    background: #e74c3c;
+}
+
+.btn-delete:hover {
+    background: #c0392b;
+}
+
+.btn-new {
+    background: #3498db;
+    width: 100%;
+}
+
+.btn-new:hover {
+    background: #2980b9;
+}
+
+.logs-box {
+    background: #222;
+    border: 1px solid #444;
+    padding: 15px;
+    height: 200px;
+    overflow-y: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+}
