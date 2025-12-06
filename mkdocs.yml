@@ -1,0 +1,26 @@
+site_name: ByteKV
+site_url: https://github.com/VSS-CO/bytekv
+repo_url: https://github.com/VSS-CO/bytekv
+repo_name: GitHub
+site_description: Fast TCP-based in-memory key-value store with Python & Node.js clients
+site_author: YourName
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: green
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage:
+      - Python Client: python.md
+      - Node.js Client: nodejs.md
+  - Project Overview: overview.md
+  - Contributing: contributing.md
+  - API Reference:
+      - Commands: commands.md
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
